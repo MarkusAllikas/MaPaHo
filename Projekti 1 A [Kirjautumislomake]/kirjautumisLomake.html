@@ -2,19 +2,54 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>KirjautumisLomake</title>
+    <title>KirjautumisLomakeProjekti</title>
     <link rel="stylesheet" href="kirjautumisLomake.css">
-    <script src="kirjautumisLomake.js"></script>
+    <script src="kirjautumisLomake.js"> </script>
 
   </head>
   <body>
 
-    <form class="lomake" action="index.html" method="post">
+    <form class="lomake" action="index.html" method="post" onsubmit="return tarkasta(this)" onreset="return tyhjenna(this)">
       <h1>Lyhyt kysely</h1>
       <label for="etunimi">Etunimi:</label><br>
-      <input type="text" id="etunimi" name="etunimi" value="..."><br>
+      <input type="text" id="etunimi" name="etunimi" value=""><br>
+
+      <label for="sukunimi">Sukunimi:</label><br>
+      <input type="text" id="sukunimi" name="sukunimi" value=""><br>
+
+      <label for="sahkoposti">Sähköpostiosoite:</label><br>
+      <input type="text" id="mail" name="mail" value="">
+
+      <h3>Valitse, mitä seuraavista olet tehnyt tänään?</h3>
+
+      <input type="checkbox" id="tanaan1" name="tanaan1" value="">
+      <label for="tanaan1">Ulkoillut</label><br>
+
+      <input type="checkbox" id="tanaan2" name="tanaan2" value="">
+      <label for="tanaan2">Puhunut puhelimessa</label><br>
+
+      <input type="checkbox" id="tanaan3" name="tanaan3" value="">
+      <label for="tanaan3">Ohjelmoinnut</label><br>
+
+      <input type="checkbox" id="tanaan4" name="tanaan4" value="">
+      <label for="tanaan4">Juonut kahvia</label><br> <br>
+
+      <tr>
+        <td colspan="2">Kerro jotain itsestäsi:</td> <br>
+        <td colspan="2" class="tekstikentta">
+          <textarea name="itse" rows="6" cols="40"></textarea><br>
+        </td>
+      </tr>
+
+      <p>Onko sinulla ajokortti?</p>
+
+      <input type="radio" name="kyllaei" value="joo">
+      Kyllä <br>
+      <input type="radio" name="kyllaei" value="ei">
+      Ei ole <br> <br>
 
       <input type="submit" value="Lähetä">
+
     </form>
 
   </body>
