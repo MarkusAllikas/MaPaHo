@@ -1,5 +1,14 @@
 function tarkasta(form)
 {
+
+  var etunimi = form.etunimi.value;
+  var sukunimi = form.sukunimi.value;
+  var sahkoposti = form.mail.value;
+  var check = form.tanaan;
+  var itse = form.itse.value;
+  var pallo = form.kyllaei;
+
+
   if (etunimi.length < 3 | etunimi.length > 15) //tarkistaa syötetyn etunimen pituuden.
   {
     alert("Anna etunimi, jonka pituus on 3-15 kirjainta.");
@@ -24,7 +33,7 @@ function tarkasta(form)
 
   if(itse.length < 10) //tekstikentän tarkistus
   {
-    alert("Et kirjoittanut tarpeeksi paljon");
+    alert("Et kirjoittanut tarpeeksi paljon itsestäsi");
     form.itse.focus();
     return false;
   }
