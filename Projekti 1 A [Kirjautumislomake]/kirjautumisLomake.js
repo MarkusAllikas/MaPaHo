@@ -29,5 +29,45 @@ function tarkasta(form)
     return false;
   }
 
-  
+  var vastaus = false; //radio buttoneiden tarkistus
+  for (var i = 0; i < pallo.length; i++)
+  {
+    if (pallo[i].checked == true)
+    {
+        vastaus = true;
+    }
+  }
+  if (vastaus == false)
+  {
+    alert("et vastannut kohtaan löytyykö sinulta ajokortti");
+    return false;
+  }
+
+  var checkV = false; // checkboxien tarkistus
+  for (var c = 0; c < check.length; c++) {
+    if (check[c].checked == true)
+    {
+      checkV = true;
+    }
+  }
+
+  if (checkV == false)
+  {
+    alert("Vastaa, mitä olet tehnyt tänään.");
+    return false;
+  }
+  else
+  {
+      alert("Kiitos vastaamisesta!");
+  }
+
+  function tyhjenna(form)
+  {
+  var clean = form.value;
+  if (!confirm("Haluatko tyhjentää tiedot?"))
+    {
+    return false;
+    }
+  }
+
 }

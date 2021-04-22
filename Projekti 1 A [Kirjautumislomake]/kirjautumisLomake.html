@@ -9,7 +9,7 @@
   </head>
   <body>
 
-    <form class="lomake" action="index.html" method="post" onsubmit="return tarkasta(this)" onreset="return tyhjenna(this)">
+    <form class="lomake" action="laheta.html" method="post" onsubmit="return tarkasta(this)" onreset="return tyhjenna(this)">
       <h1>Lyhyt kysely</h1>
       <label for="etunimi">Etunimi:</label><br>
       <input type="text" id="etunimi" name="etunimi" value=""><br>
@@ -32,7 +32,9 @@
       <label for="tanaan3">Ohjelmoinnut</label><br>
 
       <input type="checkbox" id="tanaan4" name="tanaan4" value="">
-      <label for="tanaan4">Juonut kahvia</label><br> <br>
+      <label for="tanaan4">Juonut kahvia</label><br>
+      <input type="checkbox" id="tanaan5" name="tanaan5" value="">
+      <label for="tanaan5">En mitään näistä</label> <br> <br>
 
       <tr>
         <td colspan="2">Kerro jotain itsestäsi:</td> <br>
@@ -48,7 +50,8 @@
       <input type="radio" name="kyllaei" value="ei">
       Ei ole <br> <br>
 
-      <input type="submit" value="Lähetä">
+      <input type="submit" name="Lähetä" value="Tarkasta">
+      <input type="reset" name="reset" value="Tyhjennä">
 
     </form>
 
