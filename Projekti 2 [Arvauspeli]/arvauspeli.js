@@ -1,4 +1,4 @@
-ar msg1 = document.getElementByld("messagel");
+var msg1 = document.getElementByld("messagel");
 var msg2 = document.getElementById("message2");
 var msg3 = document.getElementById("2message");
 
