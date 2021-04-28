@@ -3,5 +3,44 @@ body {
 }
 
 #laskin {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
   background-color: black;
+  display: block;
+  padding: 6px;
+  text-align: center;
+  border-radius: 2%;
+}
+
+button {
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 15%;
+  border-color: white;
+}
+
+#vastaus {
+  height: 70px;
+  width: auto;
+  text-align: right;
+  background-color: white;
+  color: black;
+  font-size: 22px;
+}
+
+#zero {
+  width: 160px;
+  border-radius: 9%;
+}
+
+#vika {
+
 }
