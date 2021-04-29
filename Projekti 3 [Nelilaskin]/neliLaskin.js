@@ -6,3 +6,9 @@ function add(count)
   nr+= count;
   document.getElementById("vastaus").innerHTML = nr;
 }
+
+function reset()
+{
+  nr = '';
+  document.getElementById("vastaus").innerHTML = nr;
+}
