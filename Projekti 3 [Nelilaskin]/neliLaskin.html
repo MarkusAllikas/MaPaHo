@@ -16,34 +16,34 @@
       <tr> <!--Ensimmäinen nappi rivi-->
         <td> <button id="reset" type="button" name="reset" onclick="reset()">AC</button> </td>
         <td> <button id="cancel" type="button" name="cancel" onclick="">C</button> </td>
-        <td> <button id="percent" type="button" name="percent" onclick="">%</button> </td>
-        <td> <button id="divide" type="button" name="divide" onclick="">/</button> </td>
+        <td> <button id="percent" type="button" name="percent" onclick="add('%')">%</button> </td>
+        <td> <button id="divide" type="button" name="divide" onclick="add('/')">/</button> </td>
       </tr>
 
       <tr> <!--Toinen nappi rivi-->
         <td> <button id="seven" type="button" name="button" onclick="add('7')">7</button> </td>
         <td> <button id="eight" type="button" name="button" onclick="add('8')">8</button> </td>
         <td> <button id="nine" type="button" name="button" onclick="add('9')">9</button> </td>
-        <td> <button id="times" type="button" name="button" onclick="">*</button> </td>
+        <td> <button id="times" type="button" name="button" onclick="add('*')">*</button> </td>
       </tr>
 
       <tr> <!--Kolmas nappi rivi-->
         <td> <button id="four" type="button" name="" onclick="add('4')">4</button> </td>
         <td> <button id="five" type="button" name="" onclick="add('5')">5</button> </td>
         <td> <button id="six" type="button" name="" onclick="add('6')">6</button> </td>
-        <td> <button id="minus" type="button" name="" onclick="">-</button> </td>
+        <td> <button id="minus" type="button" name="" onclick="add('-')">-</button> </td>
       </tr>
 
       <tr> <!--Neljäs nappi rivi-->
         <td> <button id="one" type="button" name="" onclick="add('1')">1</button> </td>
         <td> <button id="two" type="button" name="" onclick="add('2')">2</button> </td>
         <td> <button id="three" type="button" name="" onclick="add('3')">3</button> </td>
-        <td> <button id="plus" type="button" name="" onclick="">+</button> </td>
+        <td> <button id="plus" type="button" name="" onclick="add('+')">+</button> </td>
       </tr>
 
       <tr id="vika"> <!-- Viimeinen nappi rivi-->
         <td colspan="2"> <button id="zero" type="button" name="button" onclick="add('0')">0</button> </td>
-        <td> <button id="comma" type="button" name="button" onclick="">,</button> </td>
+        <td> <button id="comma" type="button" name="button" onclick="add(',')">,</button> </td>
         <td> <button id="answer" type="button" name="button" onclick="">=</button> </td>
       </tr>
 
