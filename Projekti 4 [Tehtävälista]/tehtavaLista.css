@@ -1,0 +1,27 @@
+ body {
+   background-color: darkgrey;
+   color: white;
+   font-size: 24px;
+ }
+
+#todo {
+  display: inline-block;
+  background-color: blue;
+  position: fixed;
+  top: 15%
+  left: 50%
+}
+
+#uusi-tehtava {
+  background-color: white;
+}
+
+#tehtavat {
+  display: inline-block;
+  background-color: red;
+}
+
+#tehdytTehtavat {
+  display: inline-block;
+  background-color: green;
+}
