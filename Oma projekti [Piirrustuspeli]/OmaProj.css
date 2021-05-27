@@ -1,3 +1,9 @@
 body {
   background-color: darkgrey;
 }
+
+canvas {
+  background: white;
+  display: block;
+  margin: auto;
+}
