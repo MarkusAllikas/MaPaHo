@@ -2,8 +2,14 @@ body {
   background-color: darkgrey;
 }
 
-canvas {
-  background: white;
+#piirrustusAla {
+  background: #ebebeb;
+  display: block;
+  margin: auto;
+}
+
+#teksti {
+  background: #ebebeb;
   display: block;
   margin: auto;
 }
