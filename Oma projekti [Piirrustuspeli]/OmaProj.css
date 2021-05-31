@@ -40,3 +40,13 @@ canvas {
   font-weight: bold;
   cursor: pointer;
 }
+
+section {
+  border: 4px solid grey;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px grey;
+  float: left;
+  height: 360px;
+  padding: 20px;
+  margin: 10px;
+}
