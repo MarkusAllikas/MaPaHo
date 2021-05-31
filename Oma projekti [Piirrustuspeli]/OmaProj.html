@@ -1,17 +1,36 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Piirrä ja arvaa!</title>
-    <link rel="stylesheet" href="OmaProj.css">
-  </head>
-  <body>
+  <html lang="en" dir="ltr">
 
-    <canvas id="piirrustusAla" width="1200" height="600"></canvas> <br>
-    <canvas id="teksti" width="500" height="300"></canvas>
+    <head>
+      <meta charset="utf-8">
+      <title>Piirrä ja arvaa!</title>
+      <link rel="stylesheet" href="OmaProj.css">
+      <script src="OmaProj.js"></script>
+    </head>
+
+    <body>
+
+      <div class="kentta">
+        <canvas id="piirra" width="300" height="300"></canvas>
+          <div class="tyokalut">
+            <button type="button" name="button">Undo</button>
+            <button type="button" name="button">Clear</button>
+
+
+            <div class="color-field" style:"background: black;"></div>
+            <div class="color-field" style="background: red;"></div>
+            <div class="color-field" style="background: blue;"></div>
+            <div class="color-field" style="background: green;"></div>
+            <div class="color-field" style="background: yellow;"></div>
+
+            <input type="color" class="valitseVari">
+            <input type="range" min="1" max="100" class="kyna-koko">
+          </div>
+      </div>
 
 
 
 
-  </body>
-</html>
+
+    </body>
+  </html>

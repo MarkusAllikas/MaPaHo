@@ -1,15 +1,42 @@
 body {
-  background-color: darkgrey;
+  background-color: #313131;
+  overflow: hidden;
+  margin: 0px;
+  padding: 30px;
 }
 
-#piirrustusAla {
-  background: #ebebeb;
-  display: block;
-  margin: auto;
+canvas {
+  box-shadow: -3px 2px 9px 6px;
+  cursor: pointer;
 }
 
-#teksti {
-  background: #ebebeb;
-  display: block;
-  margin: auto;
+
+.tyokalut {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.tyokalut .color-field {
+  height: 40px;
+  width: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid white;
+  align-self: center;
+}
+
+.button {
+  align-self: center;
+  width: 100px;
+  height: 40px;
+  border: 2px solid white;
+  color: white;
+  background: #222;
+  font-weight: bold;
+  cursor: pointer;
 }
