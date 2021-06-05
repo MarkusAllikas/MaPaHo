@@ -1,0 +1,36 @@
+<head>
+    <title>Plotting functions in JavaScript using the function plot library</title>
+    <meta charset="utf-8" />
+    <script src="https://d3js.org/d3.v3.min.js%22%3E</script>
+    <script src="https://mauriciopoppe.github.io/function-plot/js/function-plot.js%22%3E></script>
+  </head>
+
+  <body onload="plot();">
+    <h2>Interaktiivinen piirtäjä</h2>
+    <div class="layer">
+      <section id="plotSettings">
+        <label for="xMin">X-min: </label> arvo: <input type=number id="xMin" value=-5 step=0.5 oninput="plot();">
+        <p></p>
+        <label for="xMin">X-max: </label> arvo: <input type=number id="xMax" value=6 step=0.5 oninput="plot();">
+
+        <p></p>
+        <label for="yMin">Y-min: </label> arvo: <input type=number id="yMin" value=-6 step=0.5 oninput="plot();">
+        <p></p>
+        <label for="yMax">Y-max: </label> arvo: <input type=number id="yMax" value=6 step=0.5 oninput="plot();">
+        <p></p>
+        <label for="color">Väri: </label> arvo: <input type=color id="color" onchange="plot();">
+        <p></p>
+        <label for="function">Funktio: </label>
+        <input id="function" type="text" value="" onchange="plot();">
+        <p></p>
+        <button onclick="plot();">Piirrä!</button>
+
+      </section>
+
+      <section id="plot">
+        <div id="Function"></div>
+      </section>
+    </div>
+  </body>
+
+</html>
