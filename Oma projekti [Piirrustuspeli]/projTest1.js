@@ -4,8 +4,8 @@ window.addEventListener('load', () => {
 
 
 
-  /*canvas.height = window.innerHeight;
-  canvas.width = window.innerWidth;*/
+  canvas.height = 400;
+  canvas.width = window.innerWidth - 60;
 
   let painting = false;
 
@@ -33,6 +33,14 @@ window.addEventListener('load', () => {
       ctx.beginPath();
       ctx.moveTo(e.clientX, e.clientY);
   }
+
+  function clear_canvas() {
+
+
+
+  }
+
+
 
   canvas.addEventListener('mousedown', startPosition);
   canvas.addEventListener('mouseup', finishedPosition);
