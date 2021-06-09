@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="projTest1.css"/>
+      <script src="projTest1.js" ></script>
+    <title></title>
+  </head>
+  <body>
+
+    <!--canvas id="canvas" width="300" height="300"></canvas-->
+
+    <div class="field">
+      <canvas id="piirra"></canvas>
+        <div class="tyokalut">
+          <button type="button" name="button">Undo</button>
+          <button type="button" name="button">Clear</button>
+
+
+          <div onClick="change_color(this)" class="color-field" style:"background: black;"></div>
+          <div onClick="change_color(this)" class="color-field" style="background: red;"></div>
+          <div onClick="change_color(this)" class="color-field" style="background: blue;"></div>
+          <div onClick="change_color(this)" class="color-field" style="background: green;"></div>
+          <div onClick="change_color(this)" class="color-field" style="background: yellow;"></div>
+
+          <input type="color" class="valitseVari">
+          <input type="range" min="1" max="100" class="kyna-koko">
+        </div>
+  </body>
+</html>
