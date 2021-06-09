@@ -1,36 +1,38 @@
 <!DOCTYPE html>
+
   <html lang="en" dir="ltr">
 
     <head>
-      <meta charset="utf-8">
-      <title>.</title>
       <link rel="stylesheet" href="OmaProj.css">
-      <script src="OmaProj.js"></script>
+      <meta charset="utf-8">
+      <title> Piirrustustyökalu </title>
+
     </head>
 
+
     <body>
+      <div class="field">
+        <canvas id="canvas"></canvas>
+        <div class="tools">
+          <button onClick="undo_last()" type="button" class="button">Undo</button>
+          <button onClick="clear_canvas()" type="button" class="button">Clear</button>
 
-      <div class="kentta">
-        <canvas id="piirra" width="300" height="300"></canvas>
-          <div class="tyokalut">
-            <button type="button" name="button">Undo</button>
-            <button type="button" name="button">Clear</button>
+          <div onclick="change_color(this)" class="color-field" style="background: black;"></div>
+          <div onclick="change_color(this)" class="color-field" style="background: white;"></div>
+          <div onclick="change_color(this)" class="color-field" style="background: red;"></div>
+          <div onclick="change_color(this)" class="color-field" style="background: blue;"></div>
+          <div onclick="change_color(this)" class="color-field" style="background: green;"></div>
+          <div onclick="change_color(this)" class="color-field" style="background: yellow;"></div>
 
-
-            <div class="color-field" style:"background: black;"></div>
-            <div class="color-field" style="background: red;"></div>
-            <div class="color-field" style="background: blue;"></div>
-            <div class="color-field" style="background: green;"></div>
-            <div class="color-field" style="background: yellow;"></div>
-
-            <input type="color" class="valitseVari">
-            <input type="range" min="1" max="100" class="kyna-koko">
-          </div>
+          <input onInput="draw_color = this.value" type="color"
+                 class="color-picker">
+          <!--input type="range" min="1" max="100" class="pen-range"
+                  onInput="draw_width = this.value"-->
+        </div>
       </div>
 
-
-
-
-
     </body>
+
+    <script src="OmaProj.js"></script>
+
   </html>
